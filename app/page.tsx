@@ -8,11 +8,15 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from '@/components/ui/accordion';
+import { ModeToggle } from '@/components/mode-toggle';
 
 Amplify.configure(outputs);
 
 export default function App() {
     return (
-        <main className='flex min-h-screen flex-col items-center justify-center py-2'>thredz</main>
+        <main className='flex min-h-screen flex-col items-center justify-center py-2'>
+            <h1>thredz</h1>
+            <ModeToggle />
+        </main>
     );
 }
